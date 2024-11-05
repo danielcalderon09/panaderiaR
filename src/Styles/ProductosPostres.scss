@@ -1,0 +1,43 @@
+.productos-postres {
+  margin-top: 60px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+
+  &__title {
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+  }
+  
+  &__description {
+    font-style: italic;
+  }
+
+  &__grid {
+    display: grid;
+      grid-template-columns: repeat(4, 1fr); // Muestra 4 columnas
+      gap: 20px;
+  }
+}
+
+.NombrePostres{
+  font-size: 30px;
+}
+
+.producto-card {
+  &__button {
+    background-color: #ff6347; 
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background-color: #ff4500;
+  }
+}

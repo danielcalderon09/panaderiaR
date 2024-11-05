@@ -1,0 +1,61 @@
+.producto-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+  
+    &__imagen {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+  
+    &__nombre {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  
+    &__precio {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    &__button {
+      background-color: #ff6347;
+      border: none;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    &__button:hover {
+      background-color: #ff4500;
+    }
+  
+    &__ver-mas {
+      background-color: #ff6347;
+      border: none;
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  
+    &__ver-mas:hover {
+      background-color: #ff4500;
+    }
+  }
