@@ -1,6 +1,5 @@
-@import 'variables';
-@import 'mixins';
-
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .navbar {
   background-color: $bg-color;
@@ -22,11 +21,11 @@
       height: 100px;
       margin: 10px 0 0 20px;
       border-radius: 30%;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      @include transition(transform 0.3s ease, box-shadow 0.3s ease);
 
       &:hover {
-        transform: scale(0.9); 
-        box-shadow: 0 4px 8px $button-bg; 
+        transform: scale(0.9);
+        box-shadow: 0 4px 8px $button-bg;
       }
     }
   }
@@ -34,7 +33,7 @@
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px; 
+    gap: 30px;
     margin: 0 40px;
 
     li {
@@ -44,12 +43,12 @@
       a {
         color: $text-color;
         text-decoration: none;
-        transition: color 0.3s ease, border-bottom 0.3s ease;
+        @include transition(color 0.3s ease, border-bottom 0.3s ease);
         padding-bottom: 5px;
 
         &:hover {
           color: $hover-color;
-          border-bottom: 2px solid $hover-color; 
+          border-bottom: 2px solid $hover-color;
         }
       }
     }
@@ -60,18 +59,18 @@
       padding: 10px 20px;
       border-radius: 30px;
       font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      @include transition(background-color 0.3s ease, transform 0.2s ease);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
       &:hover {
         background-color: $button-hover;
-        transform: scale(1.05); 
+        transform: scale(1.05);
       }
     }
   }
 }
 
-// Responsivo
+// Diseño responsivo para tablet
 @include responsive(768px) {
   .navbar {
     flex-direction: column;
@@ -99,7 +98,7 @@
   }
 }
 
-// Responsivo para celular
+// Diseño responsivo para móvil
 @include responsive(480px) {
   .navbar {
     padding: 0.5rem 1rem;

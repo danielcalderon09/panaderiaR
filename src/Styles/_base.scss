@@ -1,13 +1,16 @@
+@use 'variables';
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  background-color: $bg-color;
+  background-color: variables.$bg-color;
   font-family: 'Arial', sans-serif;
-  color: $text-color;
+  color: variables.$text-color;
 }

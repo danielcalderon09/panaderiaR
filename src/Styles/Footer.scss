@@ -1,6 +1,5 @@
-@import 'variables';
-@import 'mixins';
-
+@use 'variables' as *;
+@use 'mixins' as *;
 
 .footer {
   width: 100%;
@@ -9,16 +8,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 
   &__container {
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    @media (min-width: 768px) {
+    @include responsive(768px) {
       flex-direction: row;
       justify-content: space-between;
     }
@@ -32,7 +31,7 @@
 
       .footer__logo {
         img {
-          width: 120px; 
+          width: 120px;
         }
       }
 
@@ -43,7 +42,7 @@
         p {
           font-size: 18px;
           color: $text-color;
-          margin: 10px 0 0; 
+          margin: 10px 0 0;
         }
       }
     }
@@ -61,12 +60,12 @@
         margin: 0;
 
         img {
-          width: 120px; 
+          width: 120px;
           border-radius: $image-border-radius;
-          transition: transform 0.3s ease;
+          @include transition(transform, 0.3s);
 
           &:hover {
-            transform: scale(1.05); 
+            transform: scale(1.05);
           }
         }
       }
@@ -79,12 +78,12 @@
 
         a {
           img {
-            width: 50px; 
+            width: 50px;
             border-radius: $image-border-radius;
-            transition: transform 0.3s ease;
+            @include transition(transform, 0.3s);
 
             &:hover {
-              transform: scale(1.05); 
+              transform: scale(1.05);
             }
           }
         }

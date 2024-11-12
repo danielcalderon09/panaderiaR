@@ -1,15 +1,17 @@
-@import 'variables';
-@import 'mixins';
+@use 'variables';
+@use 'mixins';
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #bba856;
+  background-color: variables.$background-color-App; 
+
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-} 
+}
