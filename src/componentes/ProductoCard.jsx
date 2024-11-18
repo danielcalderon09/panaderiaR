@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/ProductoCard.scss';
 
-const ProductoCard = ({ imagen, nombre, precio, showButton, buttonText = "Añadir al carrito", onButtonClick, verMas, onVerMasClick }) => {
+const ProductoCard = ({ imagen, nombre, precio, showButton, buttonText = "Añadir al carrito", onButtonClick, verMas, onVerMasClick, Comprar }) => {
   return (
     <div className="producto-card">
       <img src={imagen} alt={nombre} className="producto-card__imagen" />
@@ -16,7 +16,13 @@ const ProductoCard = ({ imagen, nombre, precio, showButton, buttonText = "Añadi
       
       {verMas && (
         <button className="producto-card__ver-mas" onClick={onVerMasClick}>
-          Ver más
+          Ver Más
+        </button>
+      )}
+
+      {Comprar && (
+        <button className="producto-card__ver-mas" onClick={onVerMasClick}>
+          Añadir al carrito
         </button>
       )}
     </div>
