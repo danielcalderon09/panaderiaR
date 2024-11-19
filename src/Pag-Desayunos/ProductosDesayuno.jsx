@@ -33,8 +33,8 @@ const ProductosDesayunos = () => {
 
   return (
     <div className="productos-postres">
-      <h2 className="productos-postres__title">Bebidas</h2>
-      <p className="productos-postres__description">Disfruta de nuestras refrescantes bebidas</p>
+      <h2 className="productos-postres__title">Desayunos</h2>
+      <p className="productos-postres__description">Disfruta de nuestros Desayunos</p>
 
       
       <h2 className="NombrePostres">Bebidas Frías</h2>
