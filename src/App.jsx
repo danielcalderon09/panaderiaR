@@ -10,13 +10,15 @@ import NavBar from './componentes/NavBar';
 import Footer from './componentes/Footer';
 import { CarritoProvider } from './componentes/CarritoContext';
 import ListaCarrito from './Carrito/ListaCarrito'; 
-import Carrito from './Carrito/Carrito'
-import MapaPanaderia from './Api/MapaPanaderia'
+import Carrito from './Carrito/Carrito';
+import MapaPanaderia from './Api/MapaPanaderia';
+import ScrollToTop from './componentes/ScrollToTop';
 
 function App() {
   return (
     <CarritoProvider>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
