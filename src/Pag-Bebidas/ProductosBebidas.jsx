@@ -4,19 +4,8 @@ import '../Styles/ProductosPostres.scss';
 import ProductoCard from '../componentes/ProductoCard';
 import Informacion from '../Informacion/Informacion';
 
-// Importación de imágenes
-import frio_chocolate from '../assets/Bebidas/frio_chocolate.jpg';
-import frio_kiwi from '../assets/Bebidas/frio_kiwi.jpg';
-import frio_malteada_fresa from '../assets/Bebidas/frio_malteada_fresa.jpg';
-import frio_malteada_sabor from '../assets/Bebidas/frio_malteada_sabor.jpg';
-import caliente_capuchino from '../assets/Bebidas/caliente_capuchino.jpg';
-import caliente_late_2 from '../assets/Bebidas/caliente_late_2.jpg';
-import caliente_late from '../assets/Bebidas/caliente_late.jpg';
-import caliente_te from '../assets/Bebidas/caliente_te.jpg';
-import jugo_fresa from '../assets/Bebidas/jugo_fresa.jpg';
-import jugo_guayaba from '../assets/Bebidas/jugo_guayaba.jpg';
-import jugo_leche from '../assets/Bebidas/jugo_leche.jpg';
-import jugo_naranja from '../assets/Bebidas/jugo_naranja.jpg';
+// URL base del servidor
+const SERVER_URL = 'http://localhost:3000/assets/Bebidas';
 
 const ProductosBebidas = () => {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
@@ -25,26 +14,26 @@ const ProductosBebidas = () => {
     setProductoSeleccionado(producto);
   };
 
-  // Datos de las bebidas organizados por categorías
+  
   const bebidasFrias = [
-    { imagen: frio_chocolate, nombre: "Chocolate Frío", precio: "7000", descripcion: "Chocolate frío refrescante y delicioso." },
-    { imagen: frio_kiwi, nombre: "Malteada de Kiwi", precio: "7000", descripcion: "Malteada de kiwi exótica y refrescante." },
-    { imagen: frio_malteada_fresa, nombre: "Malteada de Fresa", precio: "7000", descripcion: "Malteada de fresa cremosa y dulce." },
-    { imagen: frio_malteada_sabor, nombre: "Malteada Saborizada", precio: "7000", descripcion: "Malteada con tu sabor favorito." },
+    { imagen: `${SERVER_URL}/cerezada_nuevo.jpg`, nombre: "Chocolate Frío", precio: "7000", descripcion: "Chocolate frío refrescante y delicioso." },
+    { imagen: `${SERVER_URL}/coctel_nuevo_cristal.jpg`, nombre: "Malteada de Kiwi", precio: "7000", descripcion: "Malteada de kiwi exótica y refrescante." },
+    { imagen: `${SERVER_URL}/coctel_nuevo_verde.jpg`, nombre: "Malteada de Fresa", precio: "7000", descripcion: "Malteada de fresa cremosa y dulce." },
+    { imagen: `${SERVER_URL}/jugo_nuevo_color.jpg`, nombre: "Malteada Saborizada", precio: "7000", descripcion: "Malteada con tu sabor favorito." },
   ];
 
   const bebidasCalientes = [
-    { imagen: caliente_capuchino, nombre: "Capuchino", precio: "7000", descripcion: "Capuchino caliente con espuma cremosa." },
-    { imagen: caliente_late_2, nombre: "Latte Clásico", precio: "7000", descripcion: "Latte suave con un toque de café." },
-    { imagen: caliente_late, nombre: "Latte Mágico", precio: "7000", descripcion: "Latte con un sabor mágico y especial." },
-    { imagen: caliente_te, nombre: "Té Caliente", precio: "7000", descripcion: "Té caliente para relajarte." },
+    { imagen: `${SERVER_URL}/capuchino_nuevo_crema.jpg`, nombre: "Capuchino", precio: "7000", descripcion: "Capuchino caliente con espuma cremosa." },
+    { imagen: `${SERVER_URL}/caliente_late_2.jpg`, nombre: "Latte Clásico", precio: "7000", descripcion: "Latte suave con un toque de café." },
+    { imagen: `${SERVER_URL}/capuchino_nuevo.jpg`, nombre: "Latte Mágico", precio: "7000", descripcion: "Latte con un sabor mágico y especial." },
+    { imagen: `${SERVER_URL}/te_nuevo.jpg`, nombre: "Té Caliente", precio: "7000", descripcion: "Té caliente para relajarte." },
   ];
 
   const jugosNaturales = [
-    { imagen: jugo_fresa, nombre: "Jugo de Fresa", precio: "7000", descripcion: "Jugo natural de fresas frescas." },
-    { imagen: jugo_guayaba, nombre: "Jugo de Guayaba", precio: "7000", descripcion: "Jugo de guayaba con un sabor tropical." },
-    { imagen: jugo_leche, nombre: "Jugo con Leche", precio: "7000", descripcion: "Jugo natural con un toque de leche." },
-    { imagen: jugo_naranja, nombre: "Jugo de Naranja", precio: "7000", descripcion: "Jugo de naranja recién exprimido." },
+    { imagen: `${SERVER_URL}/limonada_nuevo.jpg`, nombre: "Jugo de Fresa", precio: "7000", descripcion: "Jugo natural de fresas frescas." },
+    { imagen: `${SERVER_URL}/jugo_nuevo_mora.jpg`, nombre: "Jugo de Guayaba", precio: "7000", descripcion: "Jugo de guayaba con un sabor tropical." },
+    { imagen: `${SERVER_URL}/jugo_fresa.jpg`, nombre: "Jugo con Leche", precio: "7000", descripcion: "Jugo natural con un toque de leche." },
+    { imagen: `${SERVER_URL}/bebida-limonada.jpg`, nombre: "Jugo de Naranja", precio: "7000", descripcion: "Jugo de naranja recién exprimido." },
   ];
 
   return (
@@ -97,7 +86,6 @@ const ProductosBebidas = () => {
         ))}
       </div>
 
-      
       {productoSeleccionado && (
         <Informacion
           producto={productoSeleccionado}

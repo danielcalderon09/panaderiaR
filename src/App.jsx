@@ -9,7 +9,9 @@ import Desayunos from './Pag-Desayunos/Desayunos';
 import NavBar from './componentes/NavBar';
 import Footer from './componentes/Footer';
 import { CarritoProvider } from './componentes/CarritoContext';
-import ListaCarrito from './Carrito/ListaCarrito'; // Importar el componente ListaCarrito
+import ListaCarrito from './Carrito/ListaCarrito'; 
+import Carrito from './Carrito/Carrito'
+import MapaPanaderia from './Api/MapaPanaderia'
 
 function App() {
   return (
@@ -21,8 +23,9 @@ function App() {
           <Route path="/postres" element={<Postres />} />
           <Route path="/bebidas" element={<Bebidas />} />
           <Route path="/desayunos" element={<Desayunos />} />
-          <Route path="/carrito" element={<ListaCarrito />} /> {/* Ruta para el carrito */}
+          <Route path="/carrito" element={<Carrito />} /> 
         </Routes>
+        <MapaPanaderia />
         <Footer />
       </Router>
     </CarritoProvider>

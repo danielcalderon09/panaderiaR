@@ -3,30 +3,7 @@ import '../Styles/ProductosPostres.scss';
 import ProductoCard from '../componentes/ProductoCard';
 import Informacion from '../Informacion/Informacion';
 
-// Importación de imágenes
-import postrefresa from '../assets/Postres/Postre-fresa.jpg';
-import postrechocolate from '../assets/Postres/postre-torta-chocolate.jpg';
-import postrehelado from '../assets/Postres/postre-helado.jpg';
-import postretorta from '../assets/Postres/postre-torta.jpg';
-import tortaBlanca from '../assets/Postres/torta_blanca.jpg';
-import torta_cereza from '../assets/Postres/torta_chocolate_cereza.jpg';
-import torta_durazno from '../assets/Postres/torta_durazno.jpg';
-import torta_fresa from '../assets/Postres/torta_fresa.jpg';
-import torta_manzana from '../assets/Postres/torta_manzana.jpg';
-import cupcake_arcoiris from '../assets/Postres/cupcake_arcoiris.jpg';
-import cupcake_chocolate from '../assets/Postres/cupcake_chocolate.jpg';
-import cupcake_fresa_chocolate from '../assets/Postres/cupcake_fresa_chocolate.png';
-import cupcake_fresa from '../assets/Postres/cupcake_fresa.jpg';
-import cupcake_mora from '../assets/Postres/cupcake_mora.png';
-import individual_brownie from '../assets/Postres/individual_brownies.jpg';
-import individual_macarrones_colores from '../assets/Postres/individual_macarrones_colores.jpg';
-import individual_macarrones from '../assets/Postres/individual_macarrones.jpg';
-import individual_macarrones_fresa from '../assets/Postres/individua_macarrones_fresa.jpg';
-import individual_galleta from '../assets/Postres/individual_galleta.jpg';
-import helado_casero from '../assets/Postres/helado_casero.jpg';
-import helado_crema from '../assets/Postres/helado_crema.jpg';
-import helado_ensalada from '../assets/Postres/helado_ensalada.jpg';
-import helado_malteada from '../assets/Postres/helado_malteada.jpg';
+const SERVER_URL = 'http://localhost:3000/assets';
 
 const ProductosPostres = () => {
   const [productoSeleccionado, setProductoSeleccionado] = useState(null);
@@ -35,36 +12,32 @@ const ProductosPostres = () => {
     setProductoSeleccionado(producto);
   };
 
-  
   const tortas = [
-    { imagen: torta_fresa, nombre: "Torta de Fresa", precio: "7000", descripcion: "Torta esponjosa con fresas frescas." },
-    { imagen: tortaBlanca, nombre: "Torta Blanca", precio: "5000", descripcion: "Torta blanca con cobertura cremosa." },
-    { imagen: torta_durazno, nombre: "Torta de Durazno", precio: "6000", descripcion: "Torta esponjosa con durazno fresco." },
-    { imagen: torta_cereza, nombre: "Torta de Chocolate y Cereza", precio: "8000", descripcion: "Torta de chocolate con cerezas." },
-    
+    { imagen: `${SERVER_URL}/Postres/torta_mora.jpg`, nombre: "Torta de Fresa", precio: "7000", descripcion: "Torta esponjosa con fresas frescas." },
+    { imagen: `${SERVER_URL}/Postres/torta_nueva_mora.jpg`, nombre: "Torta Blanca", precio: "5000", descripcion: "Torta blanca con cobertura cremosa." },
+    { imagen: `${SERVER_URL}/Postres/torta_nuevo_durazno.jpg`, nombre: "Torta de Durazno", precio: "6000", descripcion: "Torta esponjosa con durazno fresco." },
+    { imagen: `${SERVER_URL}/Postres/torta_nuevo_cereza.jpg`, nombre: "Torta de Chocolate y Cereza", precio: "8000", descripcion: "Torta de chocolate con cerezas." },
   ];
 
   const cupcakes = [
-    { imagen: cupcake_arcoiris, nombre: "Cupcake Arcoiris", precio: "7000", descripcion: "Coloridos cupcakes con sabor vainilla." },
-    { imagen: cupcake_chocolate, nombre: "Cupcake de Chocolate", precio: "7000", descripcion: "Cupcake esponjoso de chocolate." },
-    { imagen: cupcake_fresa_chocolate, nombre: "Cupcake Fresa Chocolate", precio: "7000", descripcion: "Cupcake con mezcla de fresa y chocolate." },
-    { imagen: cupcake_fresa, nombre: "Cupcake de Fresa", precio: "7000", descripcion: "Cupcake suave con sabor a fresa." },
-    
+    { imagen: `${SERVER_URL}/Postres/cupcake_nuevo_chocolate.jpg`, nombre: "Cupcake Arcoiris", precio: "7000", descripcion: "Coloridos cupcakes con sabor vainilla." },
+    { imagen: `${SERVER_URL}/Postres/cupcake_nuevo_crema.jpg`, nombre: "Cupcake de Chocolate", precio: "7000", descripcion: "Cupcake esponjoso de chocolate." },
+    { imagen: `${SERVER_URL}/Postres/cupcake_nuevo_corazon.jpg`, nombre: "Cupcake Fresa Chocolate", precio: "7000", descripcion: "Cupcake con mezcla de fresa y chocolate." },
+    { imagen: `${SERVER_URL}/Postres/cupcake_nuevo_arcoiris.jpg`, nombre: "Cupcake de Fresa", precio: "7000", descripcion: "Cupcake suave con sabor a fresa." },
   ];
 
   const individuales = [
-    { imagen: individual_macarrones_colores, nombre: "Macarrones de Colores", precio: "7000", descripcion: "Deliciosos macarrones de colores." },
-    { imagen: individual_brownie, nombre: "Brownie", precio: "7000", descripcion: "Brownie de chocolate intenso." },
-    { imagen: individual_galleta, nombre: "Galleta", precio: "7000", descripcion: "Galleta grande y crujiente." },
-    { imagen: individual_macarrones_fresa, nombre: "Macarrones de Fresa", precio: "7000", descripcion: "Macarrones con sabor a fresa." },
-    
+    { imagen: `${SERVER_URL}/Postres/macarrones_nuevo_colores.jpg`, nombre: "Macarrones de Colores", precio: "7000", descripcion: "Deliciosos macarrones de colores." },
+    { imagen: `${SERVER_URL}/Postres/brownies_nuevo.jpg`, nombre: "Brownie", precio: "7000", descripcion: "Brownie de chocolate intenso." },
+    { imagen: `${SERVER_URL}/Postres/galleta_nuevo.jpg`, nombre: "Galleta", precio: "7000", descripcion: "Galleta grande y crujiente." },
+    { imagen: `${SERVER_URL}/Postres/macarrones_nuevo_fresa.jpg`, nombre: "Macarrones de Fresa", precio: "7000", descripcion: "Macarrones con sabor a fresa." },
   ];
 
   const helados = [
-    { imagen: helado_malteada, nombre: "Malteada Helada", precio: "7000", descripcion: "Malteada refrescante con helado." },
-    { imagen: helado_casero, nombre: "Helado Casero", precio: "7000", descripcion: "Helado artesanal hecho en casa." },
-    { imagen: helado_crema, nombre: "Helado de Crema", precio: "7000", descripcion: "Helado suave de crema." },
-    { imagen: helado_ensalada, nombre: "Ensalada de Frutas Helada", precio: "7000", descripcion: "Ensalada de frutas con helado." },
+    { imagen: `${SERVER_URL}/Postres/helado_nuevo_bola.jpg`, nombre: "Malteada Helada", precio: "7000", descripcion: "Malteada refrescante con helado." },
+    { imagen: `${SERVER_URL}/Postres/helado_nuevo_cono.jpg`, nombre: "Helado Casero", precio: "7000", descripcion: "Helado artesanal hecho en casa." },
+    { imagen: `${SERVER_URL}/Postres/helado-plato.jpg`, nombre: "Helado de Crema", precio: "7000", descripcion: "Helado suave de crema." },
+    { imagen: `${SERVER_URL}/Postres/helado_nuevo_frutas.jpg`, nombre: "Ensalada de Frutas Helada", precio: "7000", descripcion: "Ensalada de frutas con helado." },
   ];
 
   return (

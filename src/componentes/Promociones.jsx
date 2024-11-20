@@ -1,8 +1,7 @@
 import React from 'react';
 import '../Styles/Promociones.scss';
-import postre from '../assets/Postres/postre-torta-chocolate-fresa.jpg';
-import torta from '../assets/Postres/torta_cumpleaños.jpg';
-import especial from '../assets/Promociones/promocion-especial.jpg';
+
+const SERVER_URL = 'http://localhost:3000/assets'; 
 
 const Promociones = () => {
   return (
@@ -12,7 +11,7 @@ const Promociones = () => {
         <p className="promociones__description">Esta promoción es tan especial, como tú</p>
       </div>
       <div className="promociones__image-container">
-        <img src={especial} alt="Promoción del día" className="promociones__image" />
+        <img src={`${SERVER_URL}/Promociones/promocion-especial.jpg`} alt="Promoción del día" className="promociones__image" />
       </div>
     </div>
   );

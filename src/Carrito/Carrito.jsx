@@ -3,9 +3,9 @@ import ListaCarrito from './ListaCarrito';
 
 const Carrito = () => {
     return (
-        <div className="carrito">
-        <ListaCarrito />
-      </div>
+        <>
+        
+        </>
     );
   };
   

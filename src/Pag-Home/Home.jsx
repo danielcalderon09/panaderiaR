@@ -12,7 +12,7 @@ const Home = () => {
       <ConoceProductos />
       <ProductosDestacados />
       <Promociones />
-      <MapaPanaderia />
+      
     </>
   );
 };

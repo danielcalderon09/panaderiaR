@@ -1,8 +1,7 @@
 import React from 'react';
 import '../Styles/NavBar.scss';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo_nuevo.png';
-import carrito from '../assets/carrito-de-compras.png';
+const SERVER_URL = 'http://localhost:3000/assets'; 
 import { useCarrito } from './CarritoContext';
 
 const NavBar = () => {
@@ -12,7 +11,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar_logo">
         <Link to="/">
-          <img src={logo} alt="Logo" />
+          <img src={`${SERVER_URL}/logo_nuevo.png`} alt="Logo" />
         </Link>
       </div>
       <ul className="nav-links">
@@ -24,7 +23,7 @@ const NavBar = () => {
         <li><Link to="/contacto" className="contact-btn">Contacto</Link></li>
         <li>
        <Link to="/carrito" className="carrito-btn">
-        <img src={carrito} alt="Carrito de Compras" className="carrito-icon" />
+        <img src={`${SERVER_URL}/carrito-de-compras.png`} alt="Carrito de Compras" className="carrito-icon" />
         {cantidadCarrito > 0 && <span className="carrito-count">{cantidadCarrito}</span>}
       </Link>
         </li>

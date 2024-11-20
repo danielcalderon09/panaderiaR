@@ -1,20 +1,17 @@
-import React, { useState , useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/Carrusel.scss';
-import croasan from '../assets/Pan/Croasan.jpg';
-import postrefresa from '../assets/Postres/Postre-fresa.jpg';
-import panlargo from '../assets/Pan/pan2.jpg';
 
 
 const slides = [
-  { image: croasan, text: '¡Deliciosos croasanes recién horneados!' },
-  { image: postrefresa, text: 'Postre de fresa, ¡fresco y delicioso!' },
-  { image: panlargo, text: 'Panes exquisitos, ¡fresco y delicioso!' }
+  { image: 'http://localhost:3000/assets/Pan/Croasan.jpg', text: '¡Deliciosos croasanes recién horneados!' },
+  { image: 'http://localhost:3000/assets/Postres/Postre-fresa.jpg', text: 'Postre de fresa, ¡fresco y delicioso!' },
+  { image: 'http://localhost:3000/assets/Pan/pan2.jpg', text: 'Panes exquisitos, ¡fresco y delicioso!' }
 ];
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Cambiar imagen cada 3 segundos automáticamente
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>

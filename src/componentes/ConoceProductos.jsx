@@ -2,9 +2,7 @@ import React from 'react';
 import '../Styles/ConoceProductos.scss';
 import { Link } from 'react-router-dom';
 
-import panlargo from '../assets/Pan/pan2.jpg';
-import macarrones from '../assets/Postres/macarrones.jpg';
-import limonada from '../assets/Bebidas/bebida-limonada.jpg';
+const SERVER_URL = 'http://localhost:3000/assets'; 
 
 const ConoceProductos = () => {
   return (
@@ -16,17 +14,17 @@ const ConoceProductos = () => {
 
       <div className="conoce-productos__gallery">
         <Link to="/desayunos" className="conoce-productos__item">
-          <img src={panlargo} alt="Pan" />
+          <img src={`${SERVER_URL}/Pan/pan_nuevo_plano.jpg`} alt="Pan" />
           <h3>Pan</h3>
         </Link>
         
         <Link to="/postres" className="conoce-productos__item">
-          <img src={macarrones} alt="Postres" />
+          <img src={`${SERVER_URL}/Postres/macarrones_nuevo.jpg`} alt="Postres" />
           <h3>Postres</h3>
         </Link>
         
         <Link to="/bebidas" className="conoce-productos__item">
-          <img src={limonada} alt="Bebidas" />
+          <img src={`${SERVER_URL}/Bebidas/bebida-limonada.jpg`} alt="Bebidas" />
           <h3>Bebidas</h3>
         </Link>
       </div>
