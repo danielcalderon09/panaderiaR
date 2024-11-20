@@ -1,6 +1,13 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+.comfortaa-font {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .navbar {
   background-color: $bg-color;
   padding: 0 20px;
@@ -55,7 +62,7 @@
 
     .contact-btn {
       background-color: $button-bg;
-      color: white;
+      color: #4B2712;
       padding: 10px 20px;
       border-radius: 30px;
       font-weight: bold;

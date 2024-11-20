@@ -12,6 +12,7 @@ import { CarritoProvider } from './componentes/CarritoContext';
 import ListaCarrito from './Carrito/ListaCarrito'; 
 import Carrito from './Carrito/Carrito'
 import MapaPanaderia from './Api/MapaPanaderia'
+import Acompañamientos from './Acompañamientos/Acompañamientos';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Acompañamientos" element={<Acompañamientos />} />
           <Route path="/postres" element={<Postres />} />
           <Route path="/bebidas" element={<Bebidas />} />
           <Route path="/desayunos" element={<Desayunos />} />

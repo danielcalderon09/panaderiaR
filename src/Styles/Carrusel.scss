@@ -1,6 +1,14 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+.windsong-regular {
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 9rem;
+}
+
 .carousel {
   margin-top: 110px;
   position: relative;
@@ -35,24 +43,38 @@
       object-fit: cover;
       border-radius: $image-border-radius;
     }
+
+    /* Superposición de color transparente */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Cambia el color y transparencia aquí */
+      z-index: 1; /* Asegura que esté por encima de la imagen */
+      border-radius: $image-border-radius;
+    }
   }
 
   &__text {
     position: absolute;
-    bottom: 20%;
+    bottom: 15%; /* Ajuste para mover el texto un poco más arriba */
     left: 50%;
     transform: translateX(-50%);
-    font-size: $font-size-medium;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 950; /* Texto más grueso */
+    color:  #F2DBAE; /* Color del relleno del texto */
     text-align: center;
+    z-index: 2;
     opacity: 0;
+    text-stroke: 0.5px #fffcf1; /* Delineado de las letras */
+    -webkit-text-stroke: 0.5p x #ebe4c8; /* Compatibilidad con WebKit */
+
     @include transition(opacity, $transition-speed);
 
-    // Aparece cuando el slide es activo
+    /* Aparece cuando el slide es activo */
     .carousel__slide.active & {
       opacity: 1;
     }
@@ -82,7 +104,6 @@
     }
   }
 
-  // Responsivo
   @include responsive(768px) {
     height: 400px;
 
