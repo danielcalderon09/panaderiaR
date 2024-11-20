@@ -16,7 +16,7 @@ const NavBar = () => {
       </div>
       <ul className="nav-links comfortaa-font">
         <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/Acompañamientos">Acompañamientos</Link></li>
+        <li><Link to="/pan">Acompañamientos</Link></li>
         <li><Link to="/postres">Postres</Link></li>
         <li><Link to="/bebidas">Bebidas</Link></li>
         <li><Link to="/desayunos">Desayunos</Link></li>
