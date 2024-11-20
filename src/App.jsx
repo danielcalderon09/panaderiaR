@@ -13,6 +13,7 @@ import ListaCarrito from './Carrito/ListaCarrito';
 import Carrito from './Carrito/Carrito';
 import MapaPanaderia from './Api/MapaPanaderia';
 import ScrollToTop from './componentes/ScrollToTop';
+import Pan from './Pag-Pan/Pan';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/pan" element={<Pan />} />
           <Route path="/postres" element={<Postres />} />
           <Route path="/bebidas" element={<Bebidas />} />
           <Route path="/desayunos" element={<Desayunos />} />
