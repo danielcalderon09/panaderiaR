@@ -128,3 +128,9 @@
     }
   }
 }
+
+@include responsive(1040px) {
+  .carousel {
+    margin-top: 0px;
+  }
+}

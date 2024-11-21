@@ -4,7 +4,7 @@ import ListaCarrito from './ListaCarrito';
 const Carrito = () => {
     return (
         <>
-        
+         <ListaCarrito />
         </>
     );
   };

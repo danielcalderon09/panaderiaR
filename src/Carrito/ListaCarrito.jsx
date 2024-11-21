@@ -1,29 +1,17 @@
 import React from 'react';
-import { useCarrito } from '../componentes/CarritoContext';
 import '../styles/ListaCarrito.scss';
+import '../Styles/ProductosDesayunos.scss';
+import '../Styles/ProductosPostres.scss';
 
 const ListaCarrito = () => {
-  const { carrito } = useCarrito();
-
-  
-  if (carrito.length === 0) {
-    return <p className="carrito-vacio">Tu carrito está vacío</p>;
-  }
-
   return (
+    <div className="productos-postres">
+      <h2 className="productos-postres__title courgette-regular">Carrito de Compras</h2>
+      <h2 className="productos-postres__title courgette-regular">Productos</h2>
+      <p className="productos-postres__description comfortaa-font">Tu Lista</p>
+      <p className="productos-postres__description comfortaa-font">Añade algo a tu carrito</p>
     <div className="lista-carrito">
-      <h2>Carrito de Compras</h2>
-      <ul className="carrito-items">
-        {carrito.map((producto, index) => (
-          <li key={index} className="carrito-item">
-            <img src={producto.imagen} alt={producto.nombre} className="carrito-item__imagen" />
-            <div className="carrito-item__info">
-              <h3>{producto.nombre}</h3>
-              <p>Cantidad: {producto.cantidad}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
+    </div>
     </div>
   );
 };

@@ -77,17 +77,17 @@
 
     .carrito-btn {
       position: relative;
-    
+
       .carrito-icon {
         width: 32px;
         height: 32px;
       }
-    
+
       .carrito-count {
         position: absolute;
-        top: -30px;  
-        right: -10px; 
-        background-color: $button-bg;  
+        top: -30px;
+        right: -10px;
+        background-color: $button-bg;
         color: white;
         border-radius: 50%;
         padding: 4px 8px;
@@ -95,14 +95,13 @@
         font-weight: bold;
       }
     }
-    
-    
   }
 }
 
-// Diseño responsivo para tablet
-@include responsive(768px) {
+// Diseño responsivo para tablet y móvil
+@include responsive(1040px) {
   .navbar {
+    position: static;
     flex-direction: column;
     padding: 1rem 1.5rem;
   }
@@ -111,9 +110,11 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 10px;
+    align-self: center;
 
     li {
       font-size: 16px;
+      align-self: center;
     }
 
     .contact-btn {
@@ -125,38 +126,6 @@
       .carrito-icon {
         width: 28px;
         height: 28px;
-      }
-    }
-  }
-}
-
-// Diseño responsivo para móvil
-@include responsive(480px) {
-  .navbar {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar_logo img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .nav-links {
-    gap: 15px;
-
-    li {
-      font-size: 14px;
-    }
-
-    .contact-btn {
-      padding: 6px 12px;
-      font-size: 14px;
-    }
-
-    .carrito-btn {
-      .carrito-icon {
-        width: 24px;
-        height: 24px;
       }
     }
   }
