@@ -33,7 +33,7 @@ const Carousel = () => {
             {index === currentIndex && (
               <>
                 <img src={slide.image} alt={`slide ${index}`} />
-                <div className="carousel__text windsong-regular" >{slide.text}</div>
+                <div className="carousel__text courgette-regular" >{slide.text}</div>
               </>
             )}
           </div>

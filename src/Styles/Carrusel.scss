@@ -9,6 +9,13 @@
   font-size: 9rem;
 }
 
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .carousel {
   margin-top: 110px;
   position: relative;
@@ -65,7 +72,7 @@
     transform: translateX(-50%);
     font-size: 3rem;
     font-weight: 950; /* Texto más grueso */
-    color:  #F2DBAE; /* Color del relleno del texto */
+    color:  #e9ddb7; /* Color del relleno del texto */
     text-align: center;
     z-index: 2;
     opacity: 0;

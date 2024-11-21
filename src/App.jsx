@@ -14,6 +14,7 @@ import Carrito from './Carrito/Carrito';
 import MapaPanaderia from './Api/MapaPanaderia';
 import ScrollToTop from './componentes/ScrollToTop';
 import Pan from './Pag-Pan/Pan';
+import Contacto from './componentes/ContactForm';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/bebidas" element={<Bebidas />} />
           <Route path="/desayunos" element={<Desayunos />} />
           <Route path="/carrito" element={<Carrito />} /> 
+          <Route path="/contacto" element={<Contacto />} /> 
         </Routes>
         <MapaPanaderia />
         <Footer />
