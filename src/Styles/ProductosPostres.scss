@@ -1,3 +1,14 @@
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+.comfortaa-font {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 .productos-postres {
   margin-top: 60px;
   text-align: center;
@@ -5,8 +16,9 @@
   background-color: #f4f4f4;
 
   &__title {
-    font-size: 2.5rem;
-    color: #ff6347;
+    font-size: 3rem;
+    color: #E5A22E;
+    margin-top: 100px;
     margin-bottom: 10px;
     font-weight: 700;
 
@@ -14,6 +26,8 @@
   
   &__description {
     font-style: italic;
+    color:#4A4A4A;
+    margin-bottom: 50px;
   }
 
   &__grid {
@@ -25,11 +39,12 @@
 
 .NombrePostres{
   font-size: 30px;
+  color: #929293;
 }
 
 .producto-card {
   &__button {
-    background-color: #ff6347; 
+    background-color: #E5A22E; 
     border: none;
     border-radius: 8px;
     padding: 0.5rem 1rem;
@@ -38,6 +53,6 @@
   }
 
   &__button:hover {
-    background-color: #ff4500;
+    background-color: #E5A22E;
   }
 }

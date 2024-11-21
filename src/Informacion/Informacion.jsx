@@ -15,14 +15,14 @@ const Informacion = ({ producto, onClose }) => {
       <div className="informacion__content">
         <img src={producto.imagen} alt={producto.nombre} className="informacion__imagen" />
         <div className="informacion__detalles">
-          <h2 className="informacion__nombre">{producto.nombre}</h2>
-          <p className="informacion__descripcion">{producto.descripcion}</p>
-          <div className="informacion__cantidad">
+          <h2 className="informacion__nombre courgette-regular">{producto.nombre}</h2>
+          <p className="informacion__descripcion comfortaa-font">{producto.descripcion}</p>
+          <div className="informacion__cantidad comfortaa-font">
             <label>Cantidad:</label>
             <input type="number" min="1" defaultValue="1" className="informacion__input" />
           </div>
-          <button className="informacion__comprar" onClick={handleComprar}>Comprar</button>
-          <button className="informacion__cerrar" onClick={onClose}>Cerrar</button>
+          <button className="informacion__comprar comfortaa-font" onClick={handleComprar}>Comprar</button>
+          <button className="informacion__cerrar comfortaa-font" onClick={onClose}>Cerrar</button>
         </div>
       </div>
     </div>

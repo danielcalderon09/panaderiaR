@@ -3,9 +3,9 @@ import '../Styles/Carrusel.scss';
 
 
 const slides = [
-  { image: 'http://localhost:3000/assets/Pan/Croasan.jpg', text: '¡Deliciosos Croasanes, Recién Horneados!' },
-  { image: 'http://localhost:3000/assets/Postres/Postre-fresa.jpg', text: 'Postre de Fresa, ¡Fresco y Delicioso!' },
-  { image: 'http://localhost:3000/assets/Pan/pan2.jpg', text: 'Panes Exquisitos, ¡Fresco y Delicioso!' }
+  { image: 'http://localhost:3000/assets/Pan/Croasan.jpg', text: 'Bienvenido a Panorama, Panadería Tradicional' },
+  { image: 'http://localhost:3000/assets/Postres/Postre-fresa.jpg', text: 'Panorama, la Mejor Panadería de la Ciudad' },
+  { image: 'http://localhost:3000/assets/Pan/pan2.jpg', text: 'En Panorama Encuentras Todo en un Solo Lugar' }
 ];
 
 const Carousel = () => {
@@ -33,7 +33,7 @@ const Carousel = () => {
             {index === currentIndex && (
               <>
                 <img src={slide.image} alt={`slide ${index}`} />
-                <div className="carousel__text courgette-regular" >{slide.text}</div>
+                <div className="carousel__text windsong-regular" >{slide.text}</div>
               </>
             )}
           </div>

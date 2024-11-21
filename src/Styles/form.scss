@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 
+
+
 // Estilos generales
 .contact-contact-contact {
-  background: url("https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg");
+  background: url("https://images.pexels.com/photos/14193926/pexels-photo-14193926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -23,13 +25,13 @@
     "contact-us header header header" 
     "contact-us address phone email" 
     "contact-us contact-form contact-form contact-form";
-  background: #F2DBAE;
+  background: #DAD9DB;
 
   & .contact-us {
     grid-area: contact-us;
     position: relative;
     width: 250px;
-    background: #A3966A;
+    background: #929293;
     overflow: hidden;
 
     &:before,
@@ -39,12 +41,12 @@
       bottom: -50px;
       height: 250px;
       width: 400px;
-      background: #935640;
+      background: #E5A22E;
       transform: rotate(25deg);
     }
 
     &:after {
-      background: #492610;
+      background: #383837;
       bottom: -80px;
       right: -100px;
       transform: rotate(-25deg);
@@ -176,7 +178,7 @@
         width: 250px;
         left: 95px;
         bottom: -20px;
-        background: #A3966A;
+        background: #E5A22E;
         color: white;
         border: 0;
         border-radius: 20px;
@@ -185,7 +187,7 @@
         outline: none;
 
         &:hover {
-          background: #A3966A;
+          background: #DAD9DB;
           cursor: pointer;
         }
       }

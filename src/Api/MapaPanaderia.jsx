@@ -24,12 +24,12 @@ const MapaPanaderia = () => {
   return (
     <div className="mapa-panaderia">
       <div className="mapa-panaderia__info">
-        <h2 className="mapa-panaderia__title">Visítanos en la Panadería Panorama</h2>
-        <p className="mapa-panaderia__description">
+        <h2 className="mapa-panaderia__title comfortaa-font">Visítanos en la Panadería Panorama</h2>
+        <p className="mapa-panaderia__description comfortaa-font">
           Encuéntranos en nuestra ubicación central y disfruta de nuestros deliciosos productos.
         </p>
-        <button className="mapa-panaderia__button" onClick={abrirEnGoogleMaps}>
-          🗺️ Ir a la Panadería
+        <button className="mapa-panaderia__button comfortaa-font" onClick={abrirEnGoogleMaps}>
+          Ir a la Panadería
         </button>
       </div>
 

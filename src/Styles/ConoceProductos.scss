@@ -1,3 +1,10 @@
+
+.comfortaa-font {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 .conoce-productos {
   text-align: center;
   padding: 40px 20px;
@@ -5,14 +12,14 @@
 
   &__title {
     font-size: 2.5rem;
-    color: #333;
+    color: #4A4A4A;
     margin-bottom: 10px;
     font-weight: 700;
   }
 
   &__description {
     font-size: 1.2rem;
-    color: #555;
+    color: #4A4A4A;
     margin-bottom: 30px;
   }
 
@@ -33,7 +40,7 @@
     height: 300px;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px #383837(0, 0, 0, 0.9);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
     &:hover {
@@ -58,8 +65,8 @@
       left: 50%;
       transform: translateX(-50%);
       font-size: 1.5rem;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.6);
+      color: #f5e7ca;
+      background: rgba(53, 45, 36, 0.5);
       padding: 10px 20px;
       border-radius: 5px;
       font-weight: 600;

@@ -13,18 +13,18 @@ const ProductosPan = () => {
     };
 
     const pan = [
-        { imagen: `${SERVER_URL}/Pan/pan_nuevo_hueco.jpg`, nombre: "Torta de Fresa", precio: "7000", descripcion: "Torta esponjosa con fresas frescas." },
-        { imagen: `${SERVER_URL}/Pan/pan_nuevo_plano.jpg`, nombre: "Torta Blanca", precio: "5000", descripcion: "Torta blanca con cobertura cremosa." },
-        { imagen: `${SERVER_URL}/Pan/pan_nuevo_rollo.jpg`, nombre: "Torta de Durazno", precio: "6000", descripcion: "Torta esponjosa con durazno fresco." },
-        { imagen: `${SERVER_URL}/Pan/pan_nuevo_salado.jpg`, nombre: "Torta de Chocolate y Cereza", precio: "8000", descripcion: "Torta de chocolate con cerezas." },
+        { imagen: `${SERVER_URL}/Pan/pan_nuevo_hueco.jpg`, nombre: "Pan Redondo", precio: "7.000", descripcion: "Delicado pan de mantequilla, suave y esponjoso, con un toque de fresas frescas, horneado a la perfección." },
+        { imagen: `${SERVER_URL}/Pan/pan_nuevo_plano.jpg`, nombre: "Pan de Trigo", precio: "5.000", descripcion: "Sutil pan de trigo, con una textura ligera y una suave cobertura cremosa que realza su sabor." },
+        { imagen: `${SERVER_URL}/Pan/pan_nuevo_rollo.jpg`, nombre: "Rollos de Canela", precio: "6.000", descripcion: "Esponjosos rollos de canela, rellenos de durazno fresco, con un toque de canela que despierta los sentidos." },
+        { imagen: `${SERVER_URL}/Pan/pan_nuevo_salado.jpg`, nombre: "Pan Artesanal", precio: "8.000", descripcion: "Pan artesanal de chocolate, con un toque de cerezas frescas que dan vida a una experiencia única." },
       ];
 
       return (
         <div className="productos-postres">
-          <h2 className="productos-postres__title">Antojos</h2>
-          <p className="productos-postres__description">Deléitate con nuestros deliciosos Panes</p>
+          <h2 className="productos-postres__title courgette-regular">Panadería</h2>
+          <p className="productos-postres__description comfortaa-font">Descubre el arte del pan recién horneado: tradición, sabor y calidad en cada bocado.</p>
     
-          <h2 className="NombrePostres">Antojos</h2>
+          <h2 className="NombrePostres comfortaa-font"></h2>
           <div className="productos-postres__grid">
             {pan.map((producto, index) => (
               <ProductoCard

@@ -1,11 +1,18 @@
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 200;
+  font-style: normal;
+}
 .promociones {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 50px;
+  background-color: #C8BFB8;
   border-radius: 8px;
   margin: 20px 0;
+
+
 
   &__text {
     flex: 1;
@@ -13,15 +20,15 @@
   }
 
   &__title {
-    font-size: 2rem; 
+    font-size: 3rem; 
     font-weight: bold;
-    color: #333;
+    color: #383837;
     margin-bottom: 10px;
   }
 
   &__description {
-    font-size: 1.5rem; 
-    color: #666;
+    font-size: 1.4rem; 
+    color: #383837;
   }
   
   &__image-container {
@@ -33,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e0e0e0;
+    background-color: #3A2416;
 
     .promociones__image {
       width: 100%;
